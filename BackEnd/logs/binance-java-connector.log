@@ -1,0 +1,666 @@
+2022-06-30 02:43:04.065[1656553384065] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2022-06-30 02:43:04.075[1656553384075] | INFO  | main       | o.s.t.c.s.AbstractContextLoader      - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-30 02:43:04.076[1656553384076] | INFO  | main       | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-30 02:43:04.201[1656553384201] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.demo.DemoApplicationTests
+2022-06-30 02:43:04.345[1656553384345] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-06-30 02:43:04.366[1656553384366] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f162cc0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5df417a7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7c041b41, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7f69d591, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@61078690, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1cb3ec38, org.springframework.test.context.transaction.TransactionalTestExecutionListener@403132fc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@71c5b236, org.springframework.test.context.event.EventPublishingTestExecutionListener@2cab9998, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2f7a7219, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@669513d8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3a1d593e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4a8a60bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@361c294e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7859e786]
+2022-06-30 02:43:04.721[1656553384721] | WARN  | main       | o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Clinton/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Clinton/.m2/repository/org/json/json/20080701/json-20080701.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-06-30 02:43:04.746[1656553384746] | INFO  | main       | c.example.demo.DemoApplicationTests  - Starting DemoApplicationTests using Java 16.0.1 on Clinton with PID 23664 (started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-06-30 02:43:04.750[1656553384750] | INFO  | main       | c.example.demo.DemoApplicationTests  - No active profile set, falling back to default profiles: default
+2022-06-30 02:43:05.940[1656553385940] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-30 02:43:06.019[1656553386019] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 MongoDB repository interfaces.
+2022-06-30 02:43:06.901[1656553386901] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-06-30 02:43:06.953[1656553386953] | INFO  | cluster-ClusterId{value='62bcffaae474bd24dbf5226f', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 02:43:07.012[1656553387012] | INFO  | cluster-ClusterId{value='62bcffaae474bd24dbf5226f', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 02:43:07.014[1656553387014] | INFO  | cluster-ClusterId{value='62bcffaae474bd24dbf5226f', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 02:43:07.657[1656553387657] | WARN  | main       | o.s.w.c.s.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'endPoints': Unsatisfied dependency expressed through field 'servicesExample'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+2022-06-30 02:43:07.692[1656553387692] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-30 02:43:07.782[1656553387782] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'endPoints': Unsatisfied dependency expressed through field 'servicesExample'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 86 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 100 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 111 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at com.example.services.BainaceWebsocket.<init>(BainaceWebsocket.java:9)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208)
+	... 113 common frames omitted
+2022-06-30 02:43:07.788[1656553387788] | ERROR | main       | o.s.test.context.TestContextManager  - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2f162cc0] to prepare test instance [com.example.demo.DemoApplicationTests@505f45cc]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'endPoints': Unsatisfied dependency expressed through field 'servicesExample'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 67 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 86 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 100 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 111 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at com.example.services.BainaceWebsocket.<init>(BainaceWebsocket.java:9)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208)
+	... 113 common frames omitted
+2022-06-30 02:48:07.559[1656553687559] | INFO  | main       | com.example.DemoApplication          - Starting DemoApplication using Java 16.0.1 on Clinton with PID 23756 (C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-06-30 02:48:07.563[1656553687563] | INFO  | main       | com.example.DemoApplication          - No active profile set, falling back to default profiles: default
+2022-06-30 02:48:08.685[1656553688685] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-30 02:48:08.753[1656553688753] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 1 MongoDB repository interfaces.
+2022-06-30 02:48:09.455[1656553689455] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-06-30 02:48:09.472[1656553689472] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-30 02:48:09.473[1656553689473] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-06-30 02:48:09.473[1656553689473] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-06-30 02:48:09.594[1656553689594] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-06-30 02:48:09.594[1656553689594] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1952 ms
+2022-06-30 02:48:09.845[1656553689845] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-06-30 02:48:09.888[1656553689888] | INFO  | cluster-ClusterId{value='62bd00d934115f2c79929e7a', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 02:48:09.922[1656553689922] | INFO  | cluster-ClusterId{value='62bd00d934115f2c79929e7a', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 02:48:09.925[1656553689925] | INFO  | cluster-ClusterId{value='62bd00d934115f2c79929e7a', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 02:48:10.190[1656553690190] | WARN  | main       | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'endPoints': Unsatisfied dependency expressed through field 'servicesExample'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+2022-06-30 02:48:10.196[1656553690196] | INFO  | main       | o.a.catalina.core.StandardService    - Stopping service [Tomcat]
+2022-06-30 02:48:10.213[1656553690213] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-30 02:48:10.234[1656553690234] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'endPoints': Unsatisfied dependency expressed through field 'servicesExample'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.DemoApplication.main(DemoApplication.java:17)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 45 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at com.example.services.BainaceWebsocket.<init>(BainaceWebsocket.java:9)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208)
+	... 47 common frames omitted
+2022-06-30 03:15:10.719[1656555310719] | INFO  | main       | com.example.DemoApplication          - Starting DemoApplication using Java 16.0.1 on Clinton with PID 23396 (C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-06-30 03:15:10.723[1656555310723] | INFO  | main       | com.example.DemoApplication          - No active profile set, falling back to default profiles: default
+2022-06-30 03:15:11.731[1656555311731] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-30 03:15:11.801[1656555311801] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 1 MongoDB repository interfaces.
+2022-06-30 03:15:12.464[1656555312464] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-06-30 03:15:12.481[1656555312481] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-30 03:15:12.482[1656555312482] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-06-30 03:15:12.482[1656555312482] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-06-30 03:15:12.592[1656555312592] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-06-30 03:15:12.592[1656555312592] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1800 ms
+2022-06-30 03:15:12.837[1656555312837] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-06-30 03:15:12.885[1656555312885] | INFO  | cluster-ClusterId{value='62bd0730dad9aa2cd1dbe62e', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 03:15:12.920[1656555312920] | INFO  | cluster-ClusterId{value='62bd0730dad9aa2cd1dbe62e', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 03:15:12.922[1656555312922] | INFO  | cluster-ClusterId{value='62bd0730dad9aa2cd1dbe62e', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 03:15:13.171[1656555313171] | WARN  | main       | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'endPoints': Unsatisfied dependency expressed through field 'servicesExample'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+2022-06-30 03:15:13.178[1656555313178] | INFO  | main       | o.a.catalina.core.StandardService    - Stopping service [Tomcat]
+2022-06-30 03:15:13.195[1656555313195] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-30 03:15:13.219[1656555313219] | ERROR | main       | o.s.boot.SpringApplication           - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'endPoints': Unsatisfied dependency expressed through field 'servicesExample'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.DemoApplication.main(DemoApplication.java:17)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servicesExample': Unsatisfied dependency expressed through field 'bainaceWebsocket'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bainaceWebsocket' defined in file [C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes\com\example\services\BainaceWebsocket.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.services.BainaceWebsocket]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 45 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.bitcoinprice.dataparsing.exchanges cannot be resolved
+	ApiExchangeToData cannot be resolved to a type
+
+	at com.example.services.BainaceWebsocket.<init>(BainaceWebsocket.java:9)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208)
+	... 47 common frames omitted
+2022-06-30 04:01:25.356[1656558085356] | INFO  | main       | com.example.DemoApplication          - Starting DemoApplication using Java 16.0.1 on Clinton with PID 20632 (C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-06-30 04:01:25.361[1656558085361] | INFO  | main       | com.example.DemoApplication          - No active profile set, falling back to default profiles: default
+2022-06-30 04:01:26.632[1656558086632] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-30 04:01:26.702[1656558086702] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 1 MongoDB repository interfaces.
+2022-06-30 04:01:27.448[1656558087448] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-06-30 04:01:27.464[1656558087464] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-30 04:01:27.465[1656558087465] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-06-30 04:01:27.465[1656558087465] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-06-30 04:01:27.581[1656558087581] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-06-30 04:01:27.582[1656558087582] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2132 ms
+2022-06-30 04:01:27.874[1656558087874] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-06-30 04:01:27.933[1656558087933] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 04:01:27.961[1656558087961] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 04:01:27.964[1656558087964] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 04:01:28.690[1656558088690] | INFO  | cluster-rtt-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:6, serverValue:637712}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:28.690[1656558088690] | INFO  | cluster-rtt-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:5, serverValue:584362}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:28.690[1656558088690] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:584368}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:28.690[1656558088690] | INFO  | cluster-rtt-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:578435}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:28.690[1656558088690] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:578445}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:28.690[1656558088690] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:4, serverValue:637757}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:28.691[1656558088691] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=387644600, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f83aaec4bdc23701b02f, counter=3}, lastWriteDate=Thu Jun 30 04:01:32 BST 2022, lastUpdateTimeNanos=75984864387200}
+2022-06-30 04:01:28.691[1656558088691] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=383810300, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004d, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f73e32d5ff72c8fd3326, counter=6}, lastWriteDate=Thu Jun 30 04:01:32 BST 2022, lastUpdateTimeNanos=75984864512000}
+2022-06-30 04:01:28.691[1656558088691] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=384677900, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f62458af8d16f5464d8f, counter=4}, lastWriteDate=Thu Jun 30 04:01:32 BST 2022, lastUpdateTimeNanos=75984864539900}
+2022-06-30 04:01:28.695[1656558088695] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max election id to 7fffffff000000000000004d from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:28.696[1656558088696] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max set version to 7 from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:28.696[1656558088696] | INFO  | cluster-ClusterId{value='62bd120730431a110ec4a534', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Discovered replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:30.113[1656558090113] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:7, serverValue:637850}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:30.742[1656558090742] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/btcusdt@trade
+2022-06-30 04:01:30.750[1656558090750] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connecting to stream.binance.com/ws/ethusdt@trade
+2022-06-30 04:01:30.751[1656558090751] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connecting to stream.binance.com/ws/ltcusdt@trade
+2022-06-30 04:01:30.751[1656558090751] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connecting to stream.binance.com/ws/btceur@trade
+2022-06-30 04:01:30.753[1656558090753] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connecting to stream.binance.com/ws/etheur@trade
+2022-06-30 04:01:30.754[1656558090754] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connecting to stream.binance.com/ws/ltceur@trade
+2022-06-30 04:01:30.754[1656558090754] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connecting to stream.binance.com/ws/btcgbp@trade
+2022-06-30 04:01:30.755[1656558090755] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connecting to stream.binance.com/ws/ltcgbp@trade
+2022-06-30 04:01:30.755[1656558090755] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connecting to stream.binance.com/ws/ethgbp@trade
+2022-06-30 04:01:30.774[1656558090774] | INFO  | main       | s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-30 04:01:31.593[1656558091593] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:8, serverValue:637857}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:31.599[1656558091599] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:11, serverValue:637857}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:31.599[1656558091599] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:10, serverValue:637857}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:31.599[1656558091599] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:9, serverValue:637856}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:31.835[1656558091835] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-30 04:01:31.872[1656558091872] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-30 04:01:31.874[1656558091874] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-06-30 04:01:31.917[1656558091917] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-06-30 04:01:31.965[1656558091965] | INFO  | main       | s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-06-30 04:01:32.152[1656558092152] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2022-06-30 04:01:32.152[1656558092152] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6c19769c]]
+2022-06-30 04:01:32.153[1656558092153] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2022-06-30 04:01:32.165[1656558092165] | INFO  | main       | com.example.DemoApplication          - Started DemoApplication in 7.331 seconds (JVM running for 8.178)
+2022-06-30 04:01:32.489[1656558092489] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connected to Server
+2022-06-30 04:01:32.494[1656558092494] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connected to Server
+2022-06-30 04:01:32.528[1656558092528] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connected to Server
+2022-06-30 04:01:32.550[1656558092550] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-06-30 04:01:32.559[1656558092559] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connected to Server
+2022-06-30 04:01:32.559[1656558092559] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connected to Server
+2022-06-30 04:01:32.569[1656558092569] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connected to Server
+2022-06-30 04:01:32.593[1656558092593] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connected to Server
+2022-06-30 04:01:32.637[1656558092637] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connected to Server
+2022-06-30 04:01:32.951[1656558092951] | INFO  | MessageBroker-4 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:12, serverValue:637856}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:34.018[1656558094018] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:13, serverValue:637832}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:34.300[1656558094300] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:14, serverValue:637780}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:01:34.336[1656558094336] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:15, serverValue:637844}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:18.091[1656558558091] | INFO  | main       | com.example.DemoApplication          - Starting DemoApplication using Java 16.0.1 on Clinton with PID 13012 (C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-06-30 04:09:18.094[1656558558094] | INFO  | main       | com.example.DemoApplication          - No active profile set, falling back to default profiles: default
+2022-06-30 04:09:19.114[1656558559114] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-30 04:09:19.188[1656558559188] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 1 MongoDB repository interfaces.
+2022-06-30 04:09:19.851[1656558559851] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-06-30 04:09:19.864[1656558559864] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-30 04:09:19.864[1656558559864] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-06-30 04:09:19.864[1656558559864] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-06-30 04:09:19.981[1656558559981] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-06-30 04:09:19.982[1656558559982] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1814 ms
+2022-06-30 04:09:20.230[1656558560230] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-06-30 04:09:20.277[1656558560277] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 04:09:20.312[1656558560312] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 04:09:20.313[1656558560313] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-06-30 04:09:20.935[1656558560935] | INFO  | cluster-rtt-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:584632}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:20.935[1656558560935] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:5, serverValue:638093}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:20.935[1656558560935] | INFO  | cluster-rtt-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:6, serverValue:578644}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:20.935[1656558560935] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:584630}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:20.935[1656558560935] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:4, serverValue:578622}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:20.935[1656558560935] | INFO  | cluster-rtt-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:638006}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:20.936[1656558560936] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=322163300, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004d, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f73e32d5ff72c8fd3326, counter=6}, lastWriteDate=Thu Jun 30 04:09:24 BST 2022, lastUpdateTimeNanos=76457111503300}
+2022-06-30 04:09:20.936[1656558560936] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=320414200, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f83aaec4bdc23701b02f, counter=3}, lastWriteDate=Thu Jun 30 04:09:24 BST 2022, lastUpdateTimeNanos=76457111432100}
+2022-06-30 04:09:20.936[1656558560936] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=329042500, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f62458af8d16f5464d8f, counter=4}, lastWriteDate=Thu Jun 30 04:09:24 BST 2022, lastUpdateTimeNanos=76457111432000}
+2022-06-30 04:09:20.938[1656558560938] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max election id to 7fffffff000000000000004d from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:20.939[1656558560939] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max set version to 7 from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:20.939[1656558560939] | INFO  | cluster-ClusterId{value='62bd13e0597964060e02c837', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Discovered replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:22.328[1656558562328] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:7, serverValue:638034}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:22.876[1656558562876] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/btcusdt@trade
+2022-06-30 04:09:22.885[1656558562885] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connecting to stream.binance.com/ws/ethusdt@trade
+2022-06-30 04:09:22.885[1656558562885] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connecting to stream.binance.com/ws/ltcusdt@trade
+2022-06-30 04:09:22.885[1656558562885] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connecting to stream.binance.com/ws/btceur@trade
+2022-06-30 04:09:22.886[1656558562886] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connecting to stream.binance.com/ws/etheur@trade
+2022-06-30 04:09:22.886[1656558562886] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connecting to stream.binance.com/ws/ltceur@trade
+2022-06-30 04:09:22.887[1656558562887] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connecting to stream.binance.com/ws/btcgbp@trade
+2022-06-30 04:09:22.887[1656558562887] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connecting to stream.binance.com/ws/ltcgbp@trade
+2022-06-30 04:09:22.887[1656558562887] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connecting to stream.binance.com/ws/ethgbp@trade
+2022-06-30 04:09:22.909[1656558562909] | INFO  | main       | s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-30 04:09:23.835[1656558563835] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-30 04:09:23.872[1656558563872] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-30 04:09:23.874[1656558563874] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-06-30 04:09:23.914[1656558563914] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-06-30 04:09:23.976[1656558563976] | INFO  | main       | s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-06-30 04:09:23.988[1656558563988] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:8, serverValue:637815}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:24.005[1656558564005] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:9, serverValue:638035}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:24.010[1656558564010] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:10, serverValue:638035}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:24.158[1656558564158] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2022-06-30 04:09:24.158[1656558564158] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@18f8e2e0]]
+2022-06-30 04:09:24.158[1656558564158] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2022-06-30 04:09:24.172[1656558564172] | INFO  | main       | com.example.DemoApplication          - Started DemoApplication in 6.517 seconds (JVM running for 7.247)
+2022-06-30 04:09:24.605[1656558564605] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connected to Server
+2022-06-30 04:09:24.633[1656558564633] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-06-30 04:09:24.665[1656558564665] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connected to Server
+2022-06-30 04:09:24.675[1656558564675] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connected to Server
+2022-06-30 04:09:24.686[1656558564686] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connected to Server
+2022-06-30 04:09:24.687[1656558564687] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connected to Server
+2022-06-30 04:09:24.690[1656558564690] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connected to Server
+2022-06-30 04:09:24.723[1656558564723] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connected to Server
+2022-06-30 04:09:24.723[1656558564723] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connected to Server
+2022-06-30 04:09:24.752[1656558564752] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:11, serverValue:637856}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:24.846[1656558564846] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:12, serverValue:638095}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:25.700[1656558565700] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:13, serverValue:637904}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-06-30 04:09:25.823[1656558565823] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:14, serverValue:638077}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
