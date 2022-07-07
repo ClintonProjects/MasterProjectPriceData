@@ -289,10 +289,12 @@ public class ServicesExample {
 		return realTimeBTCData;
 	}
 
+	
+	//drops the db
 	public void dropData() {
 		LocalDateTime now = LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC);
 		List<ExchangeDataRecieved> resultToClear = bitcoinPriceData.findAll().stream().filter(
-				i -> Duration.between(LocalDateTime.ofInstant(i.getTimestamp1(), ZoneOffset.UTC), now).toMinutes() > 3)
+				i -> Duration.between(LocalDateTime.ofInstant(i.getTimestamp1(), ZoneOffset.UTC), now).toMinutes() > 2)
 				.collect(Collectors.toList());
 		bitcoinPriceData.deleteAll(resultToClear);
 	}
