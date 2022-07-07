@@ -14,7 +14,6 @@ import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
-
 import com.bitcoinprice.dataparsing.coindata.RealTimeBTCData;
 import com.bitcoinprice.dataparsing.coindata.ExchangeDataRecieved;
 import com.example.model.ExampleObject;

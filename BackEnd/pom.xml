@@ -18,15 +18,6 @@
 		<java.version>1.8</java.version>
 		<spring.version>4.0.0.RELEASE</spring.version>
 	</properties>
-
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
-
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -118,8 +109,8 @@
 
 		<dependency>
 			<groupId>com.github.ClintonProjects</groupId>
-			<artifactId>ApiCleaning</artifactId>
-			<version>640f8b12afw8</version>
+			<artifactId>MasterProjectApiCleaning</artifactId>
+			<version>640f8b12afw13</version>
 		</dependency>
 
 		<dependency>
@@ -159,7 +150,12 @@
 
 	</dependencies>
 
-
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
