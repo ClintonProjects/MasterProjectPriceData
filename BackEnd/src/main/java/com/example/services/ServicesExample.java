@@ -300,7 +300,7 @@ public class ServicesExample {
 	}
 
 	@Async
-	@Scheduled(fixedRate = 1000 * 125)
+	@Scheduled(fixedRate = 1000 * 30)
 	public void scheduledUpdate() throws Exception {
 		dropData();
 	}
