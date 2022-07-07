@@ -87,7 +87,7 @@ public class ServicesExample {
 			Instant instant = Instant.parse(i.getTimestamp());
 			LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
 
-			if (Duration.between(localDateTime, minAgo).toSeconds() <= 60)
+			if (Duration.between(localDateTime, minAgo).toSeconds() < 60)
 				previousMinList.add(i);
 		}
 
@@ -232,8 +232,9 @@ public class ServicesExample {
 								.filter(m -> Double.valueOf(m.size) < l)
 								.filter(m -> Double.valueOf(m.size) >= SIZE.get(temp))
 								.sorted(Comparator.comparing(ExchangeDataRecieved::getTimestamp1).reversed()).limit(100)
-								.toList());
-						returnListObjList = returnList.stream().map(ExchangeDataRecieved::get_id).collect(Collectors.toList());
+								.collect(Collectors.toList()));
+						returnListObjList = returnList.stream().map(ExchangeDataRecieved::get_id)
+								.collect(Collectors.toList());
 					}
 		}
 
@@ -252,7 +253,8 @@ public class ServicesExample {
 			currentDB = currentDB.stream().filter(i -> cypto != null && i.getCypto().equalsIgnoreCase(cypto))
 					.filter(i -> currency != null && i.getCurrency().equalsIgnoreCase(currency))
 					.filter(i -> i.getCurrency().equalsIgnoreCase(currency.trim()))
-					.filter(i -> exchange != null && i.getExchange().trim().equalsIgnoreCase(exchange)).collect(Collectors.toList());
+					.filter(i -> exchange != null && i.getExchange().trim().equalsIgnoreCase(exchange))
+					.collect(Collectors.toList());
 		else
 			currentDB = currentDB.stream().filter(i -> cypto != null && i.getCypto().equalsIgnoreCase(cypto))
 					.filter(i -> currency != null && i.getCurrency().equalsIgnoreCase(currency))
