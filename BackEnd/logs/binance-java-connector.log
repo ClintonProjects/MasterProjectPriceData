@@ -2176,3 +2176,283 @@ Caused by: com.mongodb.MongoQueryException: Query failed with error code 175 and
 2022-07-07 22:22:20.736[1657228940736] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:19, serverValue:992846}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
 2022-07-07 22:22:20.773[1657228940773] | INFO  | MessageBroker-6 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:20, serverValue:992934}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
 2022-07-07 22:22:34.878[1657228954878] | INFO  | MessageBroker-15 | o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 12 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(12)-CONNECTED(12)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 32, active threads = 0, queued tasks = 0, completed tasks = 99], outboundChannel[pool size = 27, active threads = 0, queued tasks = 0, completed tasks = 27], sockJsScheduler[pool size = 16, active threads = 5, queued tasks = 5, completed tasks = 19]
+2022-07-07 22:28:20.096[1657229300096] | ERROR | MessageBroker-5 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.data.mongodb.UncategorizedMongoDbException: Query failed with error code 175 and error message 'collection dropped. UUID 30eaabe2-70ee-4d46-8867-bb42fb47d555' on server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017; nested exception is com.mongodb.MongoQueryException: Query failed with error code 175 and error message 'collection dropped. UUID 30eaabe2-70ee-4d46-8867-bb42fb47d555' on server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:140)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2899)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2824)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2543)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2525)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:847)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:428)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:150)
+	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy70.findAll(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy70.findAll(Unknown Source)
+	at com.example.services.ServicesExample.getRealTimeBTCData(ServicesExample.java:250)
+	at com.example.services.ServicesExample.averagePrice(ServicesExample.java:206)
+	at com.example.websockettest.MyController.getExchangeData(MyController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.MongoQueryException: Query failed with error code 175 and error message 'collection dropped. UUID 30eaabe2-70ee-4d46-8867-bb42fb47d555' on server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+	at com.mongodb.internal.operation.QueryHelper.translateCommandException(QueryHelper.java:29)
+	at com.mongodb.internal.operation.QueryBatchCursor.getMore(QueryBatchCursor.java:275)
+	at com.mongodb.internal.operation.QueryBatchCursor.hasNext(QueryBatchCursor.java:141)
+	at com.mongodb.client.internal.MongoBatchCursorAdapter.hasNext(MongoBatchCursorAdapter.java:54)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2811)
+	... 49 common frames omitted
+2022-07-07 22:28:20.121[1657229300121] | ERROR | MessageBroker-3 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.data.mongodb.UncategorizedMongoDbException: Query failed with error code 175 and error message 'collection dropped. UUID 30eaabe2-70ee-4d46-8867-bb42fb47d555' on server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017; nested exception is com.mongodb.MongoQueryException: Query failed with error code 175 and error message 'collection dropped. UUID 30eaabe2-70ee-4d46-8867-bb42fb47d555' on server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:140)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2899)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2824)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2543)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2525)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:847)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:428)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:150)
+	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy70.findAll(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy70.findAll(Unknown Source)
+	at com.example.services.ServicesExample.buySellBar(ServicesExample.java:80)
+	at com.example.websockettest.MyController.BuyandSellBarPercentage(MyController.java:45)
+	at jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.MongoQueryException: Query failed with error code 175 and error message 'collection dropped. UUID 30eaabe2-70ee-4d46-8867-bb42fb47d555' on server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+	at com.mongodb.internal.operation.QueryHelper.translateCommandException(QueryHelper.java:29)
+	at com.mongodb.internal.operation.QueryBatchCursor.getMore(QueryBatchCursor.java:275)
+	at com.mongodb.internal.operation.QueryBatchCursor.hasNext(QueryBatchCursor.java:141)
+	at com.mongodb.client.internal.MongoBatchCursorAdapter.hasNext(MongoBatchCursorAdapter.java:54)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2811)
+	... 47 common frames omitted
+2022-07-07 22:29:07.655[1657229347655] | INFO  | main       | com.example.DemoApplication          - Starting DemoApplication using Java 16.0.1 on Clinton with PID 16032 (C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-07-07 22:29:07.660[1657229347660] | INFO  | main       | com.example.DemoApplication          - No active profile set, falling back to default profiles: default
+2022-07-07 22:29:08.872[1657229348872] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-07-07 22:29:08.949[1657229348949] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 MongoDB repository interfaces.
+2022-07-07 22:29:09.725[1657229349725] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 22:29:09.747[1657229349747] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 22:29:09.747[1657229349747] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 22:29:09.747[1657229349747] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-07-07 22:29:09.860[1657229349860] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 22:29:09.860[1657229349860] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2112 ms
+2022-07-07 22:29:10.164[1657229350164] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-07-07 22:29:10.232[1657229350232] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 22:29:10.273[1657229350273] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 22:29:10.276[1657229350276] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 22:29:11.062[1657229351062] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:913515}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:11.062[1657229351062] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:907093}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:11.062[1657229351062] | INFO  | cluster-rtt-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:6, serverValue:913514}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:11.062[1657229351062] | INFO  | cluster-rtt-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:907099}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:11.063[1657229351063] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=418059000, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f83aaec4bdc23701b02f, counter=3}, lastWriteDate=Thu Jul 07 22:29:13 BST 2022, lastUpdateTimeNanos=25289936682500}
+2022-07-07 22:29:11.063[1657229351063] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=423960600, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f62458af8d16f5464d8f, counter=4}, lastWriteDate=Thu Jul 07 22:29:13 BST 2022, lastUpdateTimeNanos=25289936675300}
+2022-07-07 22:29:11.541[1657229351541] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:4, serverValue:993026}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:11.541[1657229351541] | INFO  | cluster-rtt-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:5, serverValue:992915}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:11.542[1657229351542] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=909887900, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004d, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f73e32d5ff72c8fd3326, counter=6}, lastWriteDate=Thu Jul 07 22:29:14 BST 2022, lastUpdateTimeNanos=25290420586600}
+2022-07-07 22:29:11.542[1657229351542] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max election id to 7fffffff000000000000004d from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:11.542[1657229351542] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max set version to 7 from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:11.543[1657229351543] | INFO  | cluster-ClusterId{value='62c750261af3f26ce1103196', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Discovered replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:13.294[1657229353294] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/btcusdt@trade
+2022-07-07 22:29:13.302[1657229353302] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connecting to stream.binance.com/ws/ethusdt@trade
+2022-07-07 22:29:13.302[1657229353302] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connecting to stream.binance.com/ws/ltcusdt@trade
+2022-07-07 22:29:13.303[1657229353303] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connecting to stream.binance.com/ws/btceur@trade
+2022-07-07 22:29:13.303[1657229353303] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connecting to stream.binance.com/ws/etheur@trade
+2022-07-07 22:29:13.304[1657229353304] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connecting to stream.binance.com/ws/ltceur@trade
+2022-07-07 22:29:13.304[1657229353304] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connecting to stream.binance.com/ws/btcgbp@trade
+2022-07-07 22:29:13.304[1657229353304] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connecting to stream.binance.com/ws/ltcgbp@trade
+2022-07-07 22:29:13.305[1657229353305] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connecting to stream.binance.com/ws/ethgbp@trade
+2022-07-07 22:29:13.323[1657229353323] | INFO  | main       | s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-07 22:29:13.543[1657229353543] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:7, serverValue:992935}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:14.444[1657229354444] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-07 22:29:14.502[1657229354502] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-07 22:29:14.506[1657229354506] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-07-07 22:29:14.560[1657229354560] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-07-07 22:29:14.671[1657229354671] | INFO  | main       | s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-07-07 22:29:14.735[1657229354735] | INFO  | http-nio-8080-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 22:29:14.735[1657229354735] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-07-07 22:29:14.742[1657229354742] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 7 ms
+2022-07-07 22:29:15.027[1657229355027] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connected to Server
+2022-07-07 22:29:15.028[1657229355028] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connected to Server
+2022-07-07 22:29:15.048[1657229355048] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connected to Server
+2022-07-07 22:29:15.052[1657229355052] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connected to Server
+2022-07-07 22:29:15.056[1657229355056] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connected to Server
+2022-07-07 22:29:15.067[1657229355067] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2022-07-07 22:29:15.068[1657229355068] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@61becbcf]]
+2022-07-07 22:29:15.069[1657229355069] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2022-07-07 22:29:15.090[1657229355090] | INFO  | main       | com.example.DemoApplication          - Started DemoApplication in 7.94 seconds (JVM running for 8.695)
+2022-07-07 22:29:15.097[1657229355097] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connected to Server
+2022-07-07 22:29:15.097[1657229355097] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connected to Server
+2022-07-07 22:29:15.141[1657229355141] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connected to Server
+2022-07-07 22:29:15.147[1657229355147] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-07-07 22:29:15.611[1657229355611] | INFO  | MessageBroker-5 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:16, serverValue:993018}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:15.611[1657229355611] | INFO  | MessageBroker-2 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:15, serverValue:992948}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:15.615[1657229355615] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:10, serverValue:992922}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:15.627[1657229355627] | INFO  | MessageBroker-1 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:14, serverValue:993008}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:15.627[1657229355627] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:8, serverValue:992975}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:15.627[1657229355627] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:9, serverValue:993019}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:15.627[1657229355627] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:13, serverValue:992979}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:15.630[1657229355630] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:11, serverValue:992809}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:15.630[1657229355630] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:12, serverValue:992915}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:16.600[1657229356600] | INFO  | MessageBroker-6 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:19, serverValue:993021}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:16.601[1657229356601] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:18, serverValue:992922}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:16.605[1657229356605] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:17, serverValue:992975}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:46.846[1657229386846] | INFO  | main       | com.example.DemoApplication          - Starting DemoApplication using Java 16.0.1 on Clinton with PID 11736 (C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd\target\classes started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-07-07 22:29:46.851[1657229386851] | INFO  | main       | com.example.DemoApplication          - No active profile set, falling back to default profiles: default
+2022-07-07 22:29:48.009[1657229388009] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-07-07 22:29:48.102[1657229388102] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 1 MongoDB repository interfaces.
+2022-07-07 22:29:48.916[1657229388916] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 22:29:48.933[1657229388933] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 22:29:48.934[1657229388934] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 22:29:48.934[1657229388934] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-07-07 22:29:49.051[1657229389051] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 22:29:49.051[1657229389051] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2104 ms
+2022-07-07 22:29:49.333[1657229389333] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-07-07 22:29:49.353[1657229389353] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 22:29:49.386[1657229389386] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 22:29:49.388[1657229389388] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 22:29:50.079[1657229390079] | INFO  | cluster-rtt-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:907112}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:50.079[1657229390079] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:6, serverValue:907100}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:50.079[1657229390079] | INFO  | cluster-rtt-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:5, serverValue:913521}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:50.079[1657229390079] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:913526}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:50.080[1657229390080] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=408922000, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f83aaec4bdc23701b02f, counter=3}, lastWriteDate=Thu Jul 07 22:29:52 BST 2022, lastUpdateTimeNanos=25328956192500}
+2022-07-07 22:29:50.080[1657229390080] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=413252900, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f62458af8d16f5464d8f, counter=4}, lastWriteDate=Thu Jul 07 22:29:52 BST 2022, lastUpdateTimeNanos=25328956192500}
+2022-07-07 22:29:50.561[1657229390561] | INFO  | cluster-rtt-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:993021}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:50.565[1657229390565] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:4, serverValue:992932}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:50.566[1657229390566] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=901904500, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004d, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f73e32d5ff72c8fd3326, counter=6}, lastWriteDate=Thu Jul 07 22:29:53 BST 2022, lastUpdateTimeNanos=25329444507300}
+2022-07-07 22:29:50.566[1657229390566] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max election id to 7fffffff000000000000004d from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:50.566[1657229390566] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max set version to 7 from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:50.567[1657229390567] | INFO  | cluster-ClusterId{value='62c7504d477e9c195e58058b', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Discovered replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:52.367[1657229392367] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/btcusdt@trade
+2022-07-07 22:29:52.375[1657229392375] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connecting to stream.binance.com/ws/ethusdt@trade
+2022-07-07 22:29:52.376[1657229392376] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connecting to stream.binance.com/ws/ltcusdt@trade
+2022-07-07 22:29:52.377[1657229392377] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connecting to stream.binance.com/ws/btceur@trade
+2022-07-07 22:29:52.377[1657229392377] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connecting to stream.binance.com/ws/etheur@trade
+2022-07-07 22:29:52.378[1657229392378] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connecting to stream.binance.com/ws/ltceur@trade
+2022-07-07 22:29:52.378[1657229392378] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connecting to stream.binance.com/ws/btcgbp@trade
+2022-07-07 22:29:52.379[1657229392379] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connecting to stream.binance.com/ws/ltcgbp@trade
+2022-07-07 22:29:52.379[1657229392379] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connecting to stream.binance.com/ws/ethgbp@trade
+2022-07-07 22:29:52.402[1657229392402] | INFO  | main       | s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-07 22:29:52.669[1657229392669] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:7, serverValue:993029}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:52.670[1657229392670] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:9, serverValue:992794}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:52.676[1657229392676] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:8, serverValue:992767}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:52.680[1657229392680] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:10, serverValue:993052}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:53.493[1657229393493] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-07 22:29:53.531[1657229393531] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-07 22:29:53.532[1657229393532] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-07-07 22:29:53.577[1657229393577] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-07-07 22:29:53.654[1657229393654] | INFO  | main       | s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-07-07 22:29:53.911[1657229393911] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2022-07-07 22:29:53.911[1657229393911] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@36453773]]
+2022-07-07 22:29:53.912[1657229393912] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2022-07-07 22:29:53.927[1657229393927] | INFO  | main       | com.example.DemoApplication          - Started DemoApplication in 7.58 seconds (JVM running for 8.339)
+2022-07-07 22:29:54.070[1657229394070] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connected to Server
+2022-07-07 22:29:54.084[1657229394084] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connected to Server
+2022-07-07 22:29:54.084[1657229394084] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connected to Server
+2022-07-07 22:29:54.093[1657229394093] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connected to Server
+2022-07-07 22:29:54.101[1657229394101] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-07-07 22:29:54.117[1657229394117] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connected to Server
+2022-07-07 22:29:54.117[1657229394117] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connected to Server
+2022-07-07 22:29:54.151[1657229394151] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connected to Server
+2022-07-07 22:29:54.230[1657229394230] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connected to Server
+2022-07-07 22:29:54.624[1657229394624] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:11, serverValue:993026}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:54.624[1657229394624] | INFO  | MessageBroker-6 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:13, serverValue:993026}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:54.626[1657229394626] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:12, serverValue:993050}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:55.603[1657229395603] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:14, serverValue:992975}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:29:56.799[1657229396799] | INFO  | http-nio-8080-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 22:29:56.799[1657229396799] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-07-07 22:29:56.800[1657229396800] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2022-07-07 22:30:52.487[1657229452487] | INFO  | MessageBroker-15 | o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[3 current WS(3)-HttpStream(0)-HttpPoll(0), 3 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(3)-CONNECTED(3)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 18, active threads = 0, queued tasks = 0, completed tasks = 18], outboundChannel[pool size = 29, active threads = 0, queued tasks = 0, completed tasks = 29], sockJsScheduler[pool size = 16, active threads = 5, queued tasks = 5, completed tasks = 47]
+2022-07-07 22:31:11.644[1657229471644] | INFO  | ReadingThread | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:15, serverValue:993051}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:31:11.651[1657229471651] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:16, serverValue:993026}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 22:31:54.675[1657229514675] | ERROR | MessageBroker-16 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.apache.http.client.ClientProtocolException: Unexpected response status: 400
+	at com.bitcoinprice.dataparsing.requests.GetRequest.lambda$sendGET$0(GetRequest.java:25)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:223)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140)
+	at com.bitcoinprice.dataparsing.requests.GetRequest.sendGET(GetRequest.java:28)
+	at com.bitcoinprice.dataparsing.exchanges.Currency.getCurrencyValues(Currency.java:28)
+	at com.example.services.CurrencyService.scheduledUpdate(CurrencyService.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2022-07-07 22:32:29.719[1657229549719] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:17, serverValue:993073}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017

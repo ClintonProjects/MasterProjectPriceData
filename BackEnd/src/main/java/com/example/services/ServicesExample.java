@@ -143,7 +143,7 @@ public class ServicesExample {
 					.filter(j -> j.getCurrency().trim().equalsIgnoreCase(i.getCurrency().trim())
 							&& j.getExchange().trim().equalsIgnoreCase(i.getExchange().trim())
 							&& j.getCypto().trim().equalsIgnoreCase(i.getCypto().trim()))
-					.limit(100).collect(Collectors.toList()));
+					.limit(50).collect(Collectors.toList()));
 		}
 
 		resultList.sort(Comparator.comparing(ExchangeDataRecieved::getTimestamp1).reversed());
@@ -195,7 +195,6 @@ public class ServicesExample {
 	}
 
 	public HashMap<String, Object> averagePrice() {
-
 		// Id data / result
 		HashMap<String, Object> exchangeData = new HashMap<String, Object>();
 		final List<String> EXCHANGE = Arrays.asList("ALL", "COINBASE PRO".trim(), "BITMEX", "BINANCE");
@@ -232,7 +231,7 @@ public class ServicesExample {
 								.filter(m -> m.getCurrency().trim().equalsIgnoreCase(k.trim()))
 								.filter(m -> Double.valueOf(m.size) < l)
 								.filter(m -> Double.valueOf(m.size) >= SIZE.get(temp))
-								.sorted(Comparator.comparing(ExchangeDataRecieved::getTimestamp1).reversed()).limit(100)
+								.sorted(Comparator.comparing(ExchangeDataRecieved::getTimestamp1).reversed()).limit(50)
 								.collect(Collectors.toList()));
 						returnListObjList = returnList.stream().map(ExchangeDataRecieved::get_id).collect(Collectors.toList());
 					}
