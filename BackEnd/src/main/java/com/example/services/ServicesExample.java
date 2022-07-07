@@ -267,7 +267,7 @@ public class ServicesExample {
 								LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC).minus(1, ChronoUnit.MINUTES))
 						.getSeconds() <= 60).collect(Collectors.toList());
 
-		// Checks for tranactions that happened less then 60 seconds and 120 seconds ago
+		// Checks for tranaction's that happened less then 60 seconds and 120 seconds ago
 		List<ExchangeDataRecieved> afterMinList = currentDB.stream()
 				.filter(i -> Duration
 						.between(LocalDateTime.ofInstant(Instant.parse(i.getTimestamp()), ZoneOffset.UTC),
