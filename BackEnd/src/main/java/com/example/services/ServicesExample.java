@@ -87,7 +87,7 @@ public class ServicesExample {
 			Instant instant = Instant.parse(i.getTimestamp());
 			LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, ZoneOffset.UTC);
 
-			if (Duration.between(localDateTime, minAgo).toSeconds() <= 60)
+			if (Duration.between(localDateTime, minAgo).getSeconds() <= 60)
 				previousMinList.add(i);
 		}
 
@@ -265,18 +265,18 @@ public class ServicesExample {
 				.filter(i -> Duration
 						.between(LocalDateTime.ofInstant(Instant.parse(i.getTimestamp()), ZoneOffset.UTC),
 								LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC).minus(1, ChronoUnit.MINUTES))
-						.toSeconds() <= 60).collect(Collectors.toList());
+						.getSeconds() <= 60).collect(Collectors.toList());
 
 		// Checks for tranactions that happened less then 60 seconds and 120 seconds ago
 		List<ExchangeDataRecieved> afterMinList = currentDB.stream()
 				.filter(i -> Duration
 						.between(LocalDateTime.ofInstant(Instant.parse(i.getTimestamp()), ZoneOffset.UTC),
 								LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC).minus(1, ChronoUnit.MINUTES))
-						.toSeconds() >= 60)
+						.getSeconds() >= 60)
 				.filter(i -> Duration
 						.between(LocalDateTime.ofInstant(Instant.parse(i.getTimestamp()), ZoneOffset.UTC),
 								LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC).minus(1, ChronoUnit.MINUTES))
-						.toSeconds() <= 120)
+						.getSeconds() <= 120)
 				.collect(Collectors.toList());
 
 		double cuurentMinPrice = previousMinList.stream().mapToDouble(i -> Double.parseDouble(i.getPrice())).sum()
