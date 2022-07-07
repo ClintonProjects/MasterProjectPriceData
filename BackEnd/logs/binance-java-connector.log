@@ -403,3 +403,520 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 2022-07-07 20:19:31.720[1657221571720] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:9, serverValue:990850}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
 2022-07-07 20:19:31.721[1657221571721] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:12, serverValue:990876}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
 2022-07-07 20:19:31.721[1657221571721] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:13, serverValue:990922}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:35:59.995[1657222559995] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2022-07-07 20:36:00.003[1657222560003] | INFO  | main       | o.s.t.c.s.AbstractContextLoader      - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-07 20:36:00.005[1657222560005] | INFO  | main       | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-07 20:36:00.116[1657222560116] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.demo.DemoApplicationTests
+2022-07-07 20:36:00.248[1657222560248] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-07 20:36:00.266[1657222560266] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7c041b41, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7f69d591, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@61078690, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1cb3ec38, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@403132fc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71c5b236, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2cab9998, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f7a7219, org.springframework.test.context.event.EventPublishingTestExecutionListener@669513d8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a1d593e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4a8a60bc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@361c294e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7859e786, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@285d851a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@314b8f2d]
+2022-07-07 20:36:00.586[1657222560586] | WARN  | main       | o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Clinton/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Clinton/.m2/repository/org/json/json/20080701/json-20080701.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-07-07 20:36:00.606[1657222560606] | INFO  | main       | c.example.demo.DemoApplicationTests  - Starting DemoApplicationTests using Java 16.0.1 on Clinton with PID 13096 (started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-07-07 20:36:00.609[1657222560609] | INFO  | main       | c.example.demo.DemoApplicationTests  - No active profile set, falling back to default profiles: default
+2022-07-07 20:36:01.639[1657222561639] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-07-07 20:36:01.702[1657222561702] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 1 MongoDB repository interfaces.
+2022-07-07 20:36:02.477[1657222562477] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-07-07 20:36:02.529[1657222562529] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:36:02.571[1657222562571] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:36:02.573[1657222562573] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:36:03.249[1657222563249] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:991158}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:03.249[1657222563249] | INFO  | cluster-rtt-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:6, serverValue:911806}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:03.249[1657222563249] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:911807}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:03.249[1657222563249] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:4, serverValue:905381}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:03.249[1657222563249] | INFO  | cluster-rtt-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:5, serverValue:991066}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:03.249[1657222563249] | INFO  | cluster-rtt-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:905382}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:03.250[1657222563250] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=345007200, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004d, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f73e32d5ff72c8fd3326, counter=6}, lastWriteDate=Thu Jul 07 20:36:05 BST 2022, lastUpdateTimeNanos=18502124688400}
+2022-07-07 20:36:03.250[1657222563250] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=351429000, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f62458af8d16f5464d8f, counter=4}, lastWriteDate=Thu Jul 07 20:36:05 BST 2022, lastUpdateTimeNanos=18502124712300}
+2022-07-07 20:36:03.250[1657222563250] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=344245400, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f83aaec4bdc23701b02f, counter=3}, lastWriteDate=Thu Jul 07 20:36:05 BST 2022, lastUpdateTimeNanos=18502124673200}
+2022-07-07 20:36:03.255[1657222563255] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max election id to 7fffffff000000000000004d from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:03.255[1657222563255] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max set version to 7 from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:03.256[1657222563256] | INFO  | cluster-ClusterId{value='62c735a2bb1a30315c33dbf6', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Discovered replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:05.779[1657222565779] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/btcusdt@trade
+2022-07-07 20:36:05.788[1657222565788] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connecting to stream.binance.com/ws/ethusdt@trade
+2022-07-07 20:36:05.788[1657222565788] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connecting to stream.binance.com/ws/ltcusdt@trade
+2022-07-07 20:36:05.789[1657222565789] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connecting to stream.binance.com/ws/btceur@trade
+2022-07-07 20:36:05.789[1657222565789] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connecting to stream.binance.com/ws/etheur@trade
+2022-07-07 20:36:05.791[1657222565791] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connecting to stream.binance.com/ws/ltceur@trade
+2022-07-07 20:36:05.791[1657222565791] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connecting to stream.binance.com/ws/btcgbp@trade
+2022-07-07 20:36:05.791[1657222565791] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connecting to stream.binance.com/ws/ltcgbp@trade
+2022-07-07 20:36:05.791[1657222565791] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connecting to stream.binance.com/ws/ethgbp@trade
+2022-07-07 20:36:05.831[1657222565831] | INFO  | main       | s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-07 20:36:07.083[1657222567083] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-07-07 20:36:07.114[1657222567114] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-07-07 20:36:07.165[1657222567165] | INFO  | main       | s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-07-07 20:36:07.367[1657222567367] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2022-07-07 20:36:07.367[1657222567367] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@70e54ec3]]
+2022-07-07 20:36:07.368[1657222567368] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2022-07-07 20:36:07.383[1657222567383] | INFO  | main       | c.example.demo.DemoApplicationTests  - Started DemoApplicationTests in 7.063 seconds (JVM running for 8.353)
+2022-07-07 20:36:07.462[1657222567462] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connected to Server
+2022-07-07 20:36:07.462[1657222567462] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connected to Server
+2022-07-07 20:36:07.485[1657222567485] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connected to Server
+2022-07-07 20:36:07.486[1657222567486] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connected to Server
+2022-07-07 20:36:07.495[1657222567495] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connected to Server
+2022-07-07 20:36:07.508[1657222567508] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connected to Server
+2022-07-07 20:36:07.508[1657222567508] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connected to Server
+2022-07-07 20:36:07.510[1657222567510] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connected to Server
+2022-07-07 20:36:07.562[1657222567562] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-07-07 20:36:07.753[1657222567753] | INFO  | MessageBroker-5 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:10, serverValue:991094}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:07.762[1657222567762] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:11, serverValue:991135}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:07.762[1657222567762] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:12, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:07.762[1657222567762] | INFO  | MessageBroker-1 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:7, serverValue:991172}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:07.762[1657222567762] | INFO  | MessageBroker-6 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:8, serverValue:991094}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:07.762[1657222567762] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:13, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:07.762[1657222567762] | INFO  | MessageBroker-4 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:9, serverValue:991094}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:07.789[1657222567789] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:14, serverValue:991151}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:08.269[1657222568269] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2022-07-07 20:36:08.269[1657222568269] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@70e54ec3]]
+2022-07-07 20:36:08.269[1657222568269] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2022-07-07 20:36:08.404[1657222568404] | INFO  | MessageBroker-4 | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:9, serverValue:991094}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because there was a socket exception raised by this connection.
+2022-07-07 20:36:08.420[1657222568420] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:10, serverValue:991094}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:36:08.421[1657222568421] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:14, serverValue:991151}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:36:08.422[1657222568422] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:11, serverValue:991135}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:36:08.473[1657222568473] | INFO  | MessageBroker-4 | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:7, serverValue:991172}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:36:08.477[1657222568477] | ERROR | MessageBroker-4 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.data.mongodb.UncategorizedMongoDbException: Interrupted acquiring a permit to retrieve an item from the pool ; nested exception is com.mongodb.MongoInterruptedException: Interrupted acquiring a permit to retrieve an item from the pool 
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:140)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2899)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2824)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2543)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2525)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:847)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:428)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:150)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.findAll(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.findAll(Unknown Source)
+	at com.example.services.ServicesExample.getRealTimeBTCData(ServicesExample.java:250)
+	at com.example.services.ServicesExample.averagePrice(ServicesExample.java:206)
+	at com.example.websockettest.MyController.getExchangeData(MyController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: com.mongodb.MongoInterruptedException: Interrupted acquiring a permit to retrieve an item from the pool 
+	at com.mongodb.internal.connection.ConcurrentPool.acquirePermit(ConcurrentPool.java:203)
+	at com.mongodb.internal.connection.ConcurrentPool.get(ConcurrentPool.java:140)
+	at com.mongodb.internal.connection.ConcurrentPool.get(ConcurrentPool.java:123)
+	at com.mongodb.internal.connection.PowerOfTwoBufferPool.getByteBuffer(PowerOfTwoBufferPool.java:82)
+	at com.mongodb.internal.connection.PowerOfTwoBufferPool.getBuffer(PowerOfTwoBufferPool.java:77)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:655)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:279)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:100)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:490)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:71)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:253)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:202)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:118)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:110)
+	at com.mongodb.internal.operation.QueryBatchCursor.getMore(QueryBatchCursor.java:268)
+	at com.mongodb.internal.operation.QueryBatchCursor.hasNext(QueryBatchCursor.java:141)
+	at com.mongodb.client.internal.MongoBatchCursorAdapter.hasNext(MongoBatchCursorAdapter.java:54)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2811)
+	... 52 common frames omitted
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1047)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at com.mongodb.internal.connection.ConcurrentPool.acquirePermit(ConcurrentPool.java:199)
+	... 73 common frames omitted
+2022-07-07 20:36:08.501[1657222568501] | INFO  | MessageBroker-1 | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:8, serverValue:991094}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because there was a socket exception raised by this connection.
+2022-07-07 20:36:08.501[1657222568501] | ERROR | MessageBroker-1 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.data.mongodb.ClientSessionException: state should be: open; nested exception is java.lang.IllegalStateException: state should be: open
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:148)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2899)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2824)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2543)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2525)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:847)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:428)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:150)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.findAll(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.findAll(Unknown Source)
+	at com.example.services.ServicesExample.dropData(ServicesExample.java:295)
+	at com.example.services.ServicesExample.scheduledUpdate(ServicesExample.java:304)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: java.lang.IllegalStateException: state should be: open
+	at com.mongodb.assertions.Assertions.isTrue(Assertions.java:79)
+	at com.mongodb.internal.connection.DefaultServer.getConnection(DefaultServer.java:94)
+	at com.mongodb.internal.binding.ClusterBinding$ClusterBindingConnectionSource.getConnection(ClusterBinding.java:123)
+	at com.mongodb.client.internal.ClientSessionBinding$SessionBindingConnectionSource.getConnection(ClientSessionBinding.java:135)
+	at com.mongodb.internal.operation.QueryBatchCursor.killCursor(QueryBatchCursor.java:327)
+	at com.mongodb.internal.operation.QueryBatchCursor.close(QueryBatchCursor.java:188)
+	at com.mongodb.client.internal.MongoBatchCursorAdapter.close(MongoBatchCursorAdapter.java:49)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2820)
+	... 51 common frames omitted
+2022-07-07 20:36:08.505[1657222568505] | INFO  | MessageBroker-6 | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:12, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because there was a socket exception raised by this connection.
+2022-07-07 20:36:08.505[1657222568505] | ERROR | MessageBroker-6 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.data.mongodb.ClientSessionException: state should be: open; nested exception is java.lang.IllegalStateException: state should be: open
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:148)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2899)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2824)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2543)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2525)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:847)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:428)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:150)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.findAll(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.findAll(Unknown Source)
+	at com.example.services.ServicesExample.getDataForDataSocket(ServicesExample.java:218)
+	at com.example.services.ServicesExample.checkForNewEntries(ServicesExample.java:175)
+	at com.example.websockettest.MyController.scheduledUpdate(MyController.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: java.lang.IllegalStateException: state should be: open
+	at com.mongodb.assertions.Assertions.isTrue(Assertions.java:79)
+	at com.mongodb.internal.connection.DefaultServer.getConnection(DefaultServer.java:94)
+	at com.mongodb.internal.binding.ClusterBinding$ClusterBindingConnectionSource.getConnection(ClusterBinding.java:123)
+	at com.mongodb.client.internal.ClientSessionBinding$SessionBindingConnectionSource.getConnection(ClientSessionBinding.java:135)
+	at com.mongodb.internal.operation.QueryBatchCursor.killCursor(QueryBatchCursor.java:327)
+	at com.mongodb.internal.operation.QueryBatchCursor.close(QueryBatchCursor.java:188)
+	at com.mongodb.client.internal.MongoBatchCursorAdapter.close(MongoBatchCursorAdapter.java:49)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2820)
+	... 52 common frames omitted
+2022-07-07 20:36:08.521[1657222568521] | INFO  | MessageBroker-5 | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:13, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because there was a socket exception raised by this connection.
+2022-07-07 20:36:08.522[1657222568522] | ERROR | MessageBroker-5 | o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.data.mongodb.ClientSessionException: state should be: open; nested exception is java.lang.IllegalStateException: state should be: open
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:148)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2899)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2824)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2543)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2525)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:847)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:428)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:150)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.findAll(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.findAll(Unknown Source)
+	at com.example.services.ServicesExample.buySellBar(ServicesExample.java:80)
+	at com.example.websockettest.MyController.BuyandSellBarPercentage(MyController.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: java.lang.IllegalStateException: state should be: open
+	at com.mongodb.assertions.Assertions.isTrue(Assertions.java:79)
+	at com.mongodb.internal.connection.DefaultServer.getConnection(DefaultServer.java:94)
+	at com.mongodb.internal.binding.ClusterBinding$ClusterBindingConnectionSource.getConnection(ClusterBinding.java:123)
+	at com.mongodb.client.internal.ClientSessionBinding$SessionBindingConnectionSource.getConnection(ClientSessionBinding.java:135)
+	at com.mongodb.internal.operation.QueryBatchCursor.killCursor(QueryBatchCursor.java:327)
+	at com.mongodb.internal.operation.QueryBatchCursor.close(QueryBatchCursor.java:188)
+	at com.mongodb.client.internal.MongoBatchCursorAdapter.close(MongoBatchCursorAdapter.java:49)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2820)
+	... 51 common frames omitted
+2022-07-07 20:36:26.950[1657222586950] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2022-07-07 20:36:26.958[1657222586958] | INFO  | main       | o.s.t.c.s.AbstractContextLoader      - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-07 20:36:26.959[1657222586959] | INFO  | main       | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-07 20:36:27.072[1657222587072] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.demo.DemoApplicationTests
+2022-07-07 20:36:27.205[1657222587205] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-07 20:36:27.226[1657222587226] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7c041b41, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7f69d591, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@61078690, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1cb3ec38, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@403132fc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71c5b236, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2cab9998, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f7a7219, org.springframework.test.context.event.EventPublishingTestExecutionListener@669513d8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a1d593e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4a8a60bc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@361c294e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7859e786, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@285d851a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@314b8f2d]
+2022-07-07 20:36:27.547[1657222587547] | WARN  | main       | o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Clinton/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Clinton/.m2/repository/org/json/json/20080701/json-20080701.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-07-07 20:36:27.570[1657222587570] | INFO  | main       | c.example.demo.DemoApplicationTests  - Starting DemoApplicationTests using Java 16.0.1 on Clinton with PID 21256 (started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-07-07 20:36:27.572[1657222587572] | INFO  | main       | c.example.demo.DemoApplicationTests  - No active profile set, falling back to default profiles: default
+2022-07-07 20:36:28.621[1657222588621] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-07-07 20:36:28.688[1657222588688] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 1 MongoDB repository interfaces.
+2022-07-07 20:36:29.454[1657222589454] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-07-07 20:36:29.476[1657222589476] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:36:29.516[1657222589516] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:36:29.519[1657222589519] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:36:30.144[1657222590144] | INFO  | cluster-rtt-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:5, serverValue:991187}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:30.144[1657222590144] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:911813}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:30.144[1657222590144] | INFO  | cluster-rtt-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:6, serverValue:905386}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:30.144[1657222590144] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:4, serverValue:905379}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:30.144[1657222590144] | INFO  | cluster-rtt-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:911817}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:30.144[1657222590144] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:991158}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:30.145[1657222590145] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=356182900, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f83aaec4bdc23701b02f, counter=3}, lastWriteDate=Thu Jul 07 20:36:32 BST 2022, lastUpdateTimeNanos=18529017380200}
+2022-07-07 20:36:30.145[1657222590145] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=360680200, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004d, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f73e32d5ff72c8fd3326, counter=6}, lastWriteDate=Thu Jul 07 20:36:32 BST 2022, lastUpdateTimeNanos=18529017340500}
+2022-07-07 20:36:30.145[1657222590145] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=360758500, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f62458af8d16f5464d8f, counter=4}, lastWriteDate=Thu Jul 07 20:36:32 BST 2022, lastUpdateTimeNanos=18529017594100}
+2022-07-07 20:36:30.149[1657222590149] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max election id to 7fffffff000000000000004d from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:30.150[1657222590150] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max set version to 7 from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:30.150[1657222590150] | INFO  | cluster-ClusterId{value='62c735bd0164977d4b4532ae', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Discovered replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:32.822[1657222592822] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/btcusdt@trade
+2022-07-07 20:36:32.831[1657222592831] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connecting to stream.binance.com/ws/ethusdt@trade
+2022-07-07 20:36:32.832[1657222592832] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connecting to stream.binance.com/ws/ltcusdt@trade
+2022-07-07 20:36:32.832[1657222592832] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connecting to stream.binance.com/ws/btceur@trade
+2022-07-07 20:36:32.833[1657222592833] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connecting to stream.binance.com/ws/etheur@trade
+2022-07-07 20:36:32.833[1657222592833] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connecting to stream.binance.com/ws/ltceur@trade
+2022-07-07 20:36:32.833[1657222592833] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connecting to stream.binance.com/ws/btcgbp@trade
+2022-07-07 20:36:32.834[1657222592834] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connecting to stream.binance.com/ws/ltcgbp@trade
+2022-07-07 20:36:32.834[1657222592834] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connecting to stream.binance.com/ws/ethgbp@trade
+2022-07-07 20:36:32.873[1657222592873] | INFO  | main       | s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-07 20:36:34.282[1657222594282] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-07-07 20:36:34.322[1657222594322] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-07-07 20:36:34.373[1657222594373] | INFO  | main       | s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-07-07 20:36:34.513[1657222594513] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-07-07 20:36:34.513[1657222594513] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connected to Server
+2022-07-07 20:36:34.513[1657222594513] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connected to Server
+2022-07-07 20:36:34.515[1657222594515] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connected to Server
+2022-07-07 20:36:34.553[1657222594553] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connected to Server
+2022-07-07 20:36:34.592[1657222594592] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connected to Server
+2022-07-07 20:36:34.592[1657222594592] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connected to Server
+2022-07-07 20:36:34.595[1657222594595] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connected to Server
+2022-07-07 20:36:34.603[1657222594603] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connected to Server
+2022-07-07 20:36:34.640[1657222594640] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2022-07-07 20:36:34.640[1657222594640] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1ddba7a0]]
+2022-07-07 20:36:34.641[1657222594641] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2022-07-07 20:36:34.655[1657222594655] | INFO  | main       | c.example.demo.DemoApplicationTests  - Started DemoApplicationTests in 7.376 seconds (JVM running for 8.674)
+2022-07-07 20:36:34.848[1657222594848] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:7, serverValue:991100}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:34.852[1657222594852] | INFO  | MessageBroker-1 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:8, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:34.860[1657222594860] | INFO  | MessageBroker-4 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:10, serverValue:991152}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:34.869[1657222594869] | INFO  | MessageBroker-5 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:9, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:34.958[1657222594958] | INFO  | MessageBroker-6 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:11, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:35.232[1657222595232] | INFO  | MessageBroker-4 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:12, serverValue:991181}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:35.276[1657222595276] | INFO  | MessageBroker-6 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:13, serverValue:991188}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:36:35.618[1657222595618] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2022-07-07 20:36:35.618[1657222595618] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1ddba7a0]]
+2022-07-07 20:36:35.618[1657222595618] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2022-07-07 20:36:35.811[1657222595811] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:11, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:36:35.812[1657222595812] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:10, serverValue:991152}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:36:35.812[1657222595812] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:9, serverValue:991127}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:38:18.795[1657222698795] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.DemoApplicationTests], using SpringBootContextLoader
+2022-07-07 20:38:18.803[1657222698803] | INFO  | main       | o.s.t.c.s.AbstractContextLoader      - Could not detect default resource locations for test class [com.example.demo.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-07 20:38:18.804[1657222698804] | INFO  | main       | o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-07 20:38:18.938[1657222698938] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.demo.DemoApplicationTests
+2022-07-07 20:38:19.083[1657222699083] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-07 20:38:19.104[1657222699104] | INFO  | main       | o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7c041b41, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7f69d591, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@61078690, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1cb3ec38, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@403132fc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71c5b236, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2cab9998, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f7a7219, org.springframework.test.context.event.EventPublishingTestExecutionListener@669513d8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a1d593e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4a8a60bc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@361c294e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7859e786, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@285d851a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@314b8f2d]
+2022-07-07 20:38:19.508[1657222699508] | WARN  | main       | o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Clinton/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Clinton/.m2/repository/org/json/json/20080701/json-20080701.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-07-07 20:38:19.550[1657222699550] | INFO  | main       | c.example.demo.DemoApplicationTests  - Starting DemoApplicationTests using Java 16.0.1 on Clinton with PID 12524 (started by Clinton in C:\Users\Clinton\Documents\GitHub\MastersProject\BackEnd)
+2022-07-07 20:38:19.553[1657222699553] | INFO  | main       | c.example.demo.DemoApplicationTests  - No active profile set, falling back to default profiles: default
+2022-07-07 20:38:20.776[1657222700776] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-07-07 20:38:20.854[1657222700854] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 1 MongoDB repository interfaces.
+2022-07-07 20:38:21.799[1657222701799] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.kyxidkt.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-f2ncas-shard-0'}
+2022-07-07 20:38:21.850[1657222701850] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:38:21.909[1657222701909] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:38:21.912[1657222701912] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-srv-cluster0.kyxidkt.mongodb.net | org.mongodb.driver.cluster           - Adding discovered server ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 to client view of cluster
+2022-07-07 20:38:22.705[1657222702705] | INFO  | cluster-rtt-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:911840}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:22.705[1657222702705] | INFO  | cluster-rtt-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:4, serverValue:991134}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:22.705[1657222702705] | INFO  | cluster-rtt-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:905415}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:22.705[1657222702705] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:905416}] to ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:22.705[1657222702705] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:5, serverValue:911845}] to ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:22.705[1657222702705] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:6, serverValue:991171}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:22.706[1657222702706] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=394629600, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004d, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f73e32d5ff72c8fd3326, counter=6}, lastWriteDate=Thu Jul 07 20:38:24 BST 2022, lastUpdateTimeNanos=18641579699200}
+2022-07-07 20:38:22.706[1657222702706] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=391427000, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f83aaec4bdc23701b02f, counter=3}, lastWriteDate=Thu Jul 07 20:38:24 BST 2022, lastUpdateTimeNanos=18641579181900}
+2022-07-07 20:38:22.706[1657222702706] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=396501600, setName='atlas-f2ncas-shard-0', canonicalAddress=ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017, hosts=[ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-02.kyxidkt.mongodb.net:27017, ac-6wuhho0-shard-00-00.kyxidkt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62a9f62458af8d16f5464d8f, counter=4}, lastWriteDate=Thu Jul 07 20:38:24 BST 2022, lastUpdateTimeNanos=18641579868600}
+2022-07-07 20:38:22.711[1657222702711] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max election id to 7fffffff000000000000004d from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:22.712[1657222702712] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Setting max set version to 7 from replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:22.712[1657222702712] | INFO  | cluster-ClusterId{value='62c7362d668f4951d72063e2', description='null'}-ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 | org.mongodb.driver.cluster           - Discovered replica set primary ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:25.610[1657222705610] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/btcusdt@trade
+2022-07-07 20:38:25.619[1657222705619] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connecting to stream.binance.com/ws/ethusdt@trade
+2022-07-07 20:38:25.620[1657222705620] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connecting to stream.binance.com/ws/ltcusdt@trade
+2022-07-07 20:38:25.620[1657222705620] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connecting to stream.binance.com/ws/btceur@trade
+2022-07-07 20:38:25.621[1657222705621] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connecting to stream.binance.com/ws/etheur@trade
+2022-07-07 20:38:25.621[1657222705621] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connecting to stream.binance.com/ws/ltceur@trade
+2022-07-07 20:38:25.622[1657222705622] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connecting to stream.binance.com/ws/btcgbp@trade
+2022-07-07 20:38:25.623[1657222705623] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connecting to stream.binance.com/ws/ltcgbp@trade
+2022-07-07 20:38:25.623[1657222705623] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connecting to stream.binance.com/ws/ethgbp@trade
+2022-07-07 20:38:25.667[1657222705667] | INFO  | main       | s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-07 20:38:27.183[1657222707183] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-07-07 20:38:27.257[1657222707257] | INFO  | main       | s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-07-07 20:38:27.315[1657222707315] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 8] Connected to Server
+2022-07-07 20:38:27.315[1657222707315] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 6] Connected to Server
+2022-07-07 20:38:27.349[1657222707349] | INFO  | main       | s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-07-07 20:38:27.356[1657222707356] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 3] Connected to Server
+2022-07-07 20:38:27.380[1657222707380] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 7] Connected to Server
+2022-07-07 20:38:27.388[1657222707388] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 5] Connected to Server
+2022-07-07 20:38:27.398[1657222707398] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 2] Connected to Server
+2022-07-07 20:38:27.405[1657222707405] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-07-07 20:38:27.407[1657222707407] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 4] Connected to Server
+2022-07-07 20:38:27.462[1657222707462] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 9] Connected to Server
+2022-07-07 20:38:27.823[1657222707823] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2022-07-07 20:38:27.824[1657222707824] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3a45308f]]
+2022-07-07 20:38:27.824[1657222707824] | INFO  | main       | o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2022-07-07 20:38:27.859[1657222707859] | INFO  | main       | c.example.demo.DemoApplicationTests  - Started DemoApplicationTests in 8.681 seconds (JVM running for 10.254)
+2022-07-07 20:38:28.091[1657222708091] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:7, serverValue:991070}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.091[1657222708091] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:10, serverValue:991250}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.091[1657222708091] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:9, serverValue:991250}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.091[1657222708091] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:8, serverValue:991255}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.096[1657222708096] | INFO  | MessageBroker-6 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:13, serverValue:991134}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.096[1657222708096] | INFO  | OkHttp https://stream.binance.com:9443/... | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:11, serverValue:991250}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.143[1657222708143] | INFO  | MessageBroker-5 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:15, serverValue:991134}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.143[1657222708143] | INFO  | MessageBroker-3 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:14, serverValue:991070}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.143[1657222708143] | INFO  | MessageBroker-1 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:12, serverValue:991070}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017
+2022-07-07 20:38:28.860[1657222708860] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2022-07-07 20:38:28.861[1657222708861] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3a45308f]]
+2022-07-07 20:38:28.861[1657222708861] | INFO  | SpringApplicationShutdownHook | o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2022-07-07 20:38:29.014[1657222709014] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:8, serverValue:991255}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:38:29.015[1657222709015] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:11, serverValue:991250}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:38:29.015[1657222709015] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:15, serverValue:991134}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:38:29.016[1657222709016] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:9, serverValue:991250}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
+2022-07-07 20:38:29.017[1657222709017] | INFO  | SpringApplicationShutdownHook | org.mongodb.driver.connection        - Closed connection [connectionId{localValue:7, serverValue:991070}] to ac-6wuhho0-shard-00-01.kyxidkt.mongodb.net:27017 because the pool has been closed.
