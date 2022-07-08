@@ -303,7 +303,7 @@ public class ServicesExample {
 		try {
 			LocalDateTime now = LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC);
 			List<ExchangeDataRecieved> resultToClear = bitcoinPriceData.findAll().stream().filter(i -> Duration
-					.between(LocalDateTime.ofInstant(i.getTimestamp1(), ZoneOffset.UTC), now).getSeconds() > 120)
+					.between(LocalDateTime.ofInstant(i.getTimestamp1(), ZoneOffset.UTC), now).getSeconds() > 60)
 					.collect(Collectors.toList());
 
 //			.map(ExchangeDataRecieved::get_id)
