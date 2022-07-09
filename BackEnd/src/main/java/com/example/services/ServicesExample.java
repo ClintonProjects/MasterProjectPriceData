@@ -298,12 +298,13 @@ public class ServicesExample {
 		return realTimeBTCData;
 	}
 
-	// drops the db
+	@Async
+	@Scheduled(fixedRate = 1000 * 30)
 	public void dropData() {
 		try {
 			LocalDateTime now = LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC);
 			List<ExchangeDataRecieved> resultToClear = bitcoinPriceData.findAll().stream().filter(i -> Duration
-					.between(LocalDateTime.ofInstant(i.getTimestamp1(), ZoneOffset.UTC), now).getSeconds() > 60)
+					.between(LocalDateTime.ofInstant(i.getTimestamp1(), ZoneOffset.UTC), now).getSeconds() > 120)
 					.collect(Collectors.toList());
 
 //			.map(ExchangeDataRecieved::get_id)
@@ -315,9 +316,11 @@ public class ServicesExample {
 		}
 	}
 
+
+	//only use in live demo version
 	@Async
-	@Scheduled(fixedRate = 1000 * 30)
+	@Scheduled(fixedRate = 1000 * 2400)
 	public void scheduledUpdate() throws Exception {
-		dropData();
+		bitcoinPriceData.deleteAll();
 	}
 }
